@@ -50,7 +50,8 @@ class DemoActivity:AppCompatActivity() {
 
         binding.button3.setOnClickListener {
             val intent = Intent(this, Demo2Activity::class.java)
-            intent.putExtra("extra_data","COMP-304-F2023")
+
+            intent.putExtra("extra_data","COMP-304-F2023\nextra data: "+binding.editText.text)
             startActivity(intent)
         }
     }

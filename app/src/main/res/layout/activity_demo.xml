@@ -6,26 +6,23 @@
 
     <TextView
         android:id="@+id/text_view"
-
         app:layout_constraintBottom_toBottomOf="@id/edit_text"
-
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="40dp"
         android:textSize="20dp"
-        android:text="Example"/>
+        android:text="Write data"/>
 
     <EditText
         android:id="@+id/edit_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintBaseline_toTopOf="@id/text_view"
+        app:layout_constraintTop_toTopOf="@id/edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="alala"
+        android:layout_margin="20dp"
+        android:text="23"
     />
 
     <Button
@@ -33,6 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edit_text"
         android:text="Call"
         android:layout_width="match_parent"
+        android:layout_margin="20dp"
         android:layout_height="wrap_content"/>
 
     <Button
@@ -40,13 +38,15 @@
         app:layout_constraintTop_toBottomOf="@+id/button_1"
         android:text="browse www"
         android:layout_width="match_parent"
+        android:layout_margin="20dp"
         android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/button_3"
         app:layout_constraintTop_toBottomOf="@+id/button_2"
-        android:text="go to first activity"
+        android:text="send data to other activity"
         android:layout_width="match_parent"
+        android:layout_margin="20dp"
         android:layout_height="wrap_content"/>
 
 
