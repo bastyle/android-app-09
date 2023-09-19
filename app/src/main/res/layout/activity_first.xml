@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/activity_first_hello_text_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Hello Bash, comp304!"
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/activity_first_true_button"
+        app:layout_constraintTop_toBottomOf="@id/activity_first_hello_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/activity_first_false_button"
+        android:layout_marginTop="32dp"
+        android:text="True!"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"/>
+
+    <Button
+        android:id="@+id/activity_first_false_button"
+        app:layout_constraintTop_toTopOf="@id/activity_first_true_button"
+        app:layout_constraintStart_toEndOf="@id/activity_first_true_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="False!"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
